@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--set linear layout as vertical-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.knight.a03_views_layout.MainActivity"
+    android:orientation="vertical">
+
+    <!--Create table layout in linear layout-->
+    <!--Stretch 1st column to end of table-->
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1,*">
+
+        <!--Create one table row in table layout-->
+        <TableRow>
+
+            <!--Create text view-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="name"
+                />
+
+            <!--Create Edit text which underline is pink and has "type your name" as placeholder-->
+            <!--We can set underline color with backgroundTint property-->
+            <!--We can set placeholder with hint property-->
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="type your name"
+                android:id="@+id/edit"
+                android:backgroundTint="#ffff00ff"/>
+        </TableRow>
+    </TableLayout>
+
+    <!--Create relative layout in linear layout-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--Create button which id is clear-->
+        <!--If this button is clicked, clearClicked method will be called-->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/clear"
+            android:onClick="clearClicked"
+            android:text="Clear"/>
+
+        <!--Create button which id is print and which is left to clear button-->
+        <!--If this button is clicked, printClicked method will be called-->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="print"
+            android:id="@+id/print"
+            android:onClick="printClicked"
+            android:layout_toRightOf="@+id/clear"/>
+
+        <!--Create text view under clear button which id is text-->
+        <!--The text you typed will be appeared-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Compnent"
+            android:id="@+id/text"
+            android:layout_below="@id/clear"/>
+    </RelativeLayout>
+
+
+</LinearLayout>
