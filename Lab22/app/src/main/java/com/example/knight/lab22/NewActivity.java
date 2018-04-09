@@ -31,7 +31,8 @@ public class NewActivity extends AppCompatActivity {
         goBtn.setOnClickListener(new View.OnClickListener() {              // Add onclick event handler to go Button
             @Override
             public void onClick(View view) {
-                if (passedIntent != null){                  // If intent is gotten successfully
+                if (!passedUrl.equalsIgnoreCase("")){                  // If user typed url correctly, not blank
+                    Toast.makeText(getApplication(), passedUrl, Toast.LENGTH_LONG);
                     Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://"+passedUrl)); // Create implicit intent to handle url
                     startActivity(intent);                  // Change activity from new activity to appropriate activity for handle url
                 }else {
