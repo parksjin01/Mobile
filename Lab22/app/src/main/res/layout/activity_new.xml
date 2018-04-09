@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.knight.lab22.NewActivity"
+    android:orientation="vertical">
+
+    <!--In this field url which is passed from main activity will be displayed-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt"/>
+
+    <!--To place two buttons in center grouping two buttons with linear layout-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <!--Button to change to appropriate activity to handle url-->
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="GO" />
+
+        <!--Button to return to main activity-->
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/btn1"
+            android:text="BACK" />
+    </LinearLayout>
+
+</RelativeLayout>

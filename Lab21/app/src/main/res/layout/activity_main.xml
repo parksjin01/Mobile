@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.knight.lab21.MainActivity"
+    android:orientation="vertical"
+    >
+
+    <!--Edit text field which name is written-->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#ff00aa"
+        android:hint="이름"
+        android:id="@+id/edit1"/>
+
+    <!--Edit text field which age is written-->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#ff00aa"
+        android:hint="나이"
+        android:id="@+id/edit2"/>
+
+    <!--Button to change activity from main to new activity-->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="추가하기"
+        android:id="@+id/btn"/>
+</LinearLayout>
