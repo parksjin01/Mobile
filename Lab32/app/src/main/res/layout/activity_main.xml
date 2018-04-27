@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--This activity use Table layout as the most outer layout-->
+<!--This tables 2nd coulumn is stretched-->
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.knight.lab32.MainActivity"
+    android:stretchColumns="1">
+
+    <!--First row in table layout-->
+    <TableRow>
+
+        <!--Label for designating user to write user name-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="이름"
+            />
+
+        <!--EditText widget which accept user name input-->
+        <!--Underline color is pink-->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#f0f"
+            android:id="@+id/edit"/>
+    </TableRow>
+
+    <!--Second row in table layout-->
+    <TableRow>
+
+        <!--Label for designating user to select user gender-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="성별"/>
+
+        <!--Grouping multiple radio button by radio group-->
+        <!--Only one radio button in radio buttons which is belonging to same radio group-->
+        <RadioGroup
+            android:layout_width = "match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/rg">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="남"
+            android:id="@+id/r1"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="녀"
+            android:id="@+id/r2"/>
+    </RadioGroup>
+    </TableRow>
+
+    <!--Third row in table layout-->
+    <TableRow>
+
+        <!--Label for designating user to select user agreement about marketing-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="수신여부"/>
+
+        <!--To make two CheckBox as single cell in the table-->
+        <!--Use linear layout for grouping two checkbox-->
+        <LinearLayout>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SMS"
+                android:id="@+id/c1"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="E-mail"
+                android:id="@+id/c2"/>
+        </LinearLayout>
+    </TableRow>
+
+    <!--Button to submit-->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="등록"
+        android:id="@+id/btn"
+        android:layout_gravity="right"/>
+</TableLayout>

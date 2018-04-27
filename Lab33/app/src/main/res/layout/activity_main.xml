@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <!--Use linear layout to display two buttons side by side-->
+    <!--Use linear layout as horizontal orientation-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <!--Add first button which display first fragment-->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TAB 1"
+            android:id="@+id/btn1"/>
+
+        <!--Add second button which display second fragment-->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TAB 2"
+            android:id="@+id/btn2"/>
+    </LinearLayout>
+
+    <!--Use frame layout to occupying space where fragment will be displayed-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/container">
+        <!--<fragment-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:id="@+id/fragment"-->
+            <!--android:name="com.example.knight.lab33.Fragment1"/>-->
+    </FrameLayout>
+
+</LinearLayout>

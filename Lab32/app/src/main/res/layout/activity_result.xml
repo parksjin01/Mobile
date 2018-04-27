@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--This is layout for displaying result-->
+<!--Use Table layout-->
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.knight.lab32.ResultActivity"
+    android:stretchColumns="1">
+
+    <!--First row in the table-->
+    <TableRow>
+
+        <!--Label for designating user that right text is user name-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="성명"/>
+
+        <!--Displaying user name-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/name"
+            android:text=""/>
+    </TableRow>
+
+    <!--Second row in the table-->
+    <TableRow>
+
+        <!--Label for designating user that right text is user gender-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="성별"/>
+
+        <!--Displaying user gender-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/gender"
+            android:text=""/>
+    </TableRow>
+
+    <!--Third row in the table-->
+    <TableRow>
+
+        <!--Label for designating user that right text is user agreement of marketing-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="수신여부"/>
+
+        <!--Displaying user agreement-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/receive"
+            android:text=""/>
+    </TableRow>
+    <TableRow>
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="이전"
+            android:layout_gravity="right"
+            android:id="@+id/btn_back"
+            android:layout_column="1"/>
+    </TableRow>
+
+</TableLayout>

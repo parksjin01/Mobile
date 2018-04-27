@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--Layout for first fragment-->
+<!--First fragment use linear layout-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--TextView widget which designate this layout is first fragment-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="First fragment"
+        android:textSize="30dp"/>
+
+    <!--First fragment layouts image-->
+    <!--This image views scaleType is fitXY which make image size equal as ImageView size-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/images"
+        android:scaleType="fitXY"/>
+
+</LinearLayout>
