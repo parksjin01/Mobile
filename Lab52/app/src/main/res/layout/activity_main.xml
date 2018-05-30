@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!--Text view to describe this application-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Facto Thread!"
+        android:textSize="40dp"
+        android:layout_gravity="center_horizontal" />
+
+    <!--Layout which contain EditText view and Button-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--User input number here-->
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#ff00ff"
+            android:hint="n"
+            android:id="@+id/number"
+            android:gravity="center"/>
+
+        <!--User press this button to calculate factorial-->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/btn"
+            android:text="CALCULATE"/>
+    </LinearLayout>
+
+    <!--Text view to show sequence of number from n to 1-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/res1"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:text="n n-1 n-2 ..."/>
+
+    <!--Text view to show result of factorial calculation-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/res2"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:text="=?"/>
+
+
+</LinearLayout>
