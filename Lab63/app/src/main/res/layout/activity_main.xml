@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--User Table Layout-->
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:stretchColumns="1">
+
+    <!--First Row-->
+    <TableRow>
+
+        <!--Label to designate user have to input name-->
+        <TextView
+            android:text="이름"/>
+
+        <!--EditText to receive name from user-->
+        <EditText
+            android:id="@+id/name"/>
+    </TableRow>
+
+    <!--Second Row-->
+    <TableRow
+        android:layout_marginTop="20dp">
+
+        <!--Label to designate user have to input student number-->
+        <TextView
+            android:text="학번"/>
+
+        <!--EditText to receive student number from user-->
+        <EditText
+            android:id="@+id/sn"/>
+    </TableRow>
+
+    <!--Third Row-->
+    <TableRow>
+        <LinearLayout
+            android:layout_span="2"
+            android:gravity="center">
+
+            <!--Button for student addition-->
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="추가"
+                android:id="@+id/add"/>
+
+            <!--Button for student deletion-->
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="삭제"
+                android:id="@+id/delete"/>
+        </LinearLayout>
+    </TableRow>
+
+    <!--List view to show list of student-->
+    <ListView
+        android:id="@+id/listView">
+    </ListView>
+</TableLayout>

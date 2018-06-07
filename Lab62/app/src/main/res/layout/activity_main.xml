@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--Use Table Layout-->
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:stretchColumns="*"
+    android:orientation="vertical">
+
+    <!--First row-->
+    <TableRow>
+
+        <!--Name of table-->
+        <TextView
+            android:text="Shared preference example"
+            android:layout_gravity="center"
+            android:layout_span="3"/>
+    </TableRow>
+
+    <!--Second row-->
+    <TableRow
+        android:layout_marginTop="20dp">
+
+        <!--Label for student number input-->
+        <TextView
+            android:text="학번" />
+
+        <!--EditText widget to get student number-->
+        <EditText
+            android:layout_span="2"
+            android:id="@+id/sn"
+            android:hint="..."
+            />
+    </TableRow>
+
+    <!--Third row-->
+    <TableRow>
+
+        <!--Label for student name input-->
+        <TextView
+            android:text="이름" />
+
+        <!--EditText widget to get student name-->
+        <EditText
+            android:layout_span="2"
+            android:id="@+id/name"
+            android:hint="..."
+            />
+    </TableRow>
+
+    <!--Fourth Row-->
+    <TableRow>
+
+        <!--Button to load saved student information-->
+        <Button
+            android:text="불러오기"
+            android:id="@+id/load"/>
+
+        <!--Button to save typed student information-->
+        <Button
+            android:text="저장하기"
+            android:id="@+id/save"/>
+
+        <!--Button to reset editText-->
+        <Button
+            android:text="초기화"
+            android:id="@+id/reset"/>
+    </TableRow>
+
+</TableLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <!--EditText widget to get input from user-->
+    <EditText
+        android:id="@+id/txtData"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_margin="10dp"
+        android:background="#55dddddd"
+        android:padding="10dp"
+        android:gravity="top"
+        android:hint="Enter some lines of data here..."
+        android:textSize="18sp"/>
+
+    <!--Button widget to save data to external file-->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="20dp"
+        android:text="1. WRITE SD FILE"
+        android:id="@+id/write"/>
+
+    <!--Button widget to clear data in EditText widget-->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="20dp"
+        android:text="2. CLEAR SCREEN"
+        android:id="@+id/clear"/>
+
+    <!--Button widget to read data from external file and set data to EditText widget-->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="20dp"
+        android:text="3. READ SD FILE"
+        android:id="@+id/read"/>
+
+    <!--Button to terminate app-->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="20dp"
+        android:text="4. FINISH APP"
+        android:id="@+id/finish"/>
+</LinearLayout>
